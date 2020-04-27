@@ -17,22 +17,22 @@ struct SongGenresView: View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
     
-    private func createListSongGenres() -> some View {
-        let allGenreList = self.songs.map { $0.genre }
-        
-        var genres: [SongGenre] = []
-        allGenreList.forEach({ genreItem in
-            if genres.firstIndex(where: { $0 == genreItem }) == nil {
-                genres.append(genreItem)
-            }
-        })
-        
-        List {
-            ForEach(genres) {
-                SongGenreItemView(songGenre: $0, isSelected: <#T##Binding<Bool>#>)
-            }
-        }
-    }
+//    private func createListSongGenres() -> some View {
+//        let allGenreList = self.songs.map { $0.genre }
+//        
+//        var genres: [SongGenre] = []
+//        allGenreList.forEach({ genreItem in
+//            if genres.firstIndex(where: { $0 == genreItem }) == nil {
+//                genres.append(genreItem)
+//            }
+//        })
+//        
+//        List {
+//            ForEach(genres) {
+//                SongGenreItemView(songGenre: $0, isSelected: <#T##Binding<Bool>#>)
+//            }
+//        }
+//    }
 }
 
 struct SongGenresView_Previews: PreviewProvider {
