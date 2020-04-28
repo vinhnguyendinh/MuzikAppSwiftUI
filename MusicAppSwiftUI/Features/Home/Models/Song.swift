@@ -45,7 +45,7 @@ class Song: NSObject, Identifiable {
         self.genre = genre
     }
     
-    static let `default` = Song(id: UUID().uuidString, name: "Hallowed be thy name", singer: Singer.default, artist: Artist.default, time: 100, comments: [], lyrics: [:], imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80", url: "https://itunes.apple.com/us/album/something-for-the-pain/900032785?i=900032829", genre: .pop)
+    static let `default` = Song(id: UUID().uuidString, name: "Hallowed be thy name", singer: Singer.default, artist: Artist.default, time: 100, comments: [], lyrics: [:], imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80", url: "https://s3.amazonaws.com/kargopolov/kukushka.mp3", genre: .pop)
 }
 
 // MARK: - Song genre

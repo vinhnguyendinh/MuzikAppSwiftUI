@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90885C52458032300F38312 /* RemotePlayerURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90885C42458032300F38312 /* RemotePlayerURL.swift */; };
+		C90885C724580F2300F38312 /* PlayerTimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90885C624580F2300F38312 /* PlayerTimeObserver.swift */; };
+		C90885C92458117F00F38312 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90885C82458117F00F38312 /* Utility.swift */; };
 		C962618E2449749600460396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C962618D2449749600460396 /* AppDelegate.swift */; };
 		C96261902449749600460396 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C962618F2449749600460396 /* SceneDelegate.swift */; };
 		C96261932449749600460396 /* MusicAppSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C96261912449749600460396 /* MusicAppSwiftUI.xcdatamodeld */; };
@@ -63,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C90885C42458032300F38312 /* RemotePlayerURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlayerURL.swift; sourceTree = "<group>"; };
+		C90885C624580F2300F38312 /* PlayerTimeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimeObserver.swift; sourceTree = "<group>"; };
+		C90885C82458117F00F38312 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		C962618A2449749600460396 /* MusicAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C962618D2449749600460396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C962618F2449749600460396 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +138,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C90885C3245802EE00F38312 /* RemotePlayerURL */ = {
+			isa = PBXGroup;
+			children = (
+				C90885C42458032300F38312 /* RemotePlayerURL.swift */,
+				C90885C624580F2300F38312 /* PlayerTimeObserver.swift */,
+			);
+			path = RemotePlayerURL;
+			sourceTree = "<group>";
+		};
 		C96261812449749600460396 = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +266,8 @@
 				C9CB8FA02456C13A0046BA39 /* CustomSlider */,
 				C96261D824498E8000460396 /* Extensions */,
 				C98F03512457B11500DC9553 /* RemoteImageURL */,
+				C90885C3245802EE00F38312 /* RemotePlayerURL */,
+				C90885C82458117F00F38312 /* Utility.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -449,10 +466,12 @@
 				C98F03532457B13300DC9553 /* RemoteImageURL.swift in Sources */,
 				C96261D624498C5100460396 /* HomeView.swift in Sources */,
 				C9CB8F9F2456BFD40046BA39 /* SeekBarView.swift in Sources */,
+				C90885C52458032300F38312 /* RemotePlayerURL.swift in Sources */,
 				C96261932449749600460396 /* MusicAppSwiftUI.xcdatamodeld in Sources */,
 				C9CB8FA82456C31C0046BA39 /* MagnitudeChart.swift in Sources */,
 				C9CB8FAE2456D32F0046BA39 /* NowPlayingView.swift in Sources */,
 				C96261E224499E6500460396 /* SongGenresView.swift in Sources */,
+				C90885C92458117F00F38312 /* Utility.swift in Sources */,
 				C9CB8FA62456C19B0046BA39 /* CustomSliderComponents.swift in Sources */,
 				C9CB8F972456B5A00046BA39 /* ProfileImageView.swift in Sources */,
 				C96261E524499EA800460396 /* SongGenreItemView.swift in Sources */,
@@ -462,6 +481,7 @@
 				C96261D2244986A200460396 /* TabBarItem.swift in Sources */,
 				C96261CA24497E1A00460396 /* Comment.swift in Sources */,
 				C96261902449749600460396 /* SceneDelegate.swift in Sources */,
+				C90885C724580F2300F38312 /* PlayerTimeObserver.swift in Sources */,
 				C98F03552457B98F00DC9553 /* URLImageView.swift in Sources */,
 				C96261C624497ABA00460396 /* Peoples.swift in Sources */,
 				C96261C824497B2400460396 /* Album.swift in Sources */,

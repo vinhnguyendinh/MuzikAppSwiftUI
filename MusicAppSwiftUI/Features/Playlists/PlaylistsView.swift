@@ -29,7 +29,7 @@ struct PlaylistsView: View {
     private func createSongListView() -> some View {
         return List {
             SongGenresView(songs: songs, height: 120)
-
+            
             ForEach(songs) { song in
                 NavigationLink(destination: self.createNowPlayingView(with: song)) {
                     PlaylistRow(songName: song.name ?? "", 
@@ -40,7 +40,11 @@ struct PlaylistsView: View {
     }
     
     private func createNowPlayingView(with song: Song) -> some View {
-        return NowPlayingView(time: song.time ?? 0, songImageUrl: song.imageUrl ?? "", songName: song.name ?? "", singerName: song.singer?.name ?? "", songUrl: song.url ?? "")
+        return NowPlayingView(currentDuration: 100,
+                              songImageUrl: song.imageUrl ?? "", 
+                              songName: song.name ?? "", 
+                              singerName: song.singer?.name ?? "", 
+                              songUrl: song.url ?? "")
     }
 }
 
