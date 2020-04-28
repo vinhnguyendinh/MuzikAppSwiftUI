@@ -9,9 +9,12 @@
 import SwiftUI
 
 struct SeekBarView: View {
-    var currentDuration: TimeInterval
+    // !Important: Current duration must greater than 0
+    @Binding var currentDuration: TimeInterval
     
     @Binding var currentTime: TimeInterval
+    
+    var onDragHandler: (_ editingStarted: Bool) -> ()
     
     var body: some View {
         VStack {
@@ -24,14 +27,16 @@ struct SeekBarView: View {
         return ZStack {
             VStack(spacing: 0) {
                 Group {
-                    CustomSlider(value: $currentTime, range: (0, self.currentDuration), knobWidth: 0) { modifiers in
+                    CustomSlider(value: self.$currentTime, range: (0, self.currentDuration), viewBuilder: { modifiers in
                         ZStack {
                             Color.pinkColor
                                 .modifier(modifiers.barLeft)
                             Color.black.opacity(0.2)
                                 .modifier(modifiers.barRight)
                         }.clipShape(MagnitudeChart())
-                    }.frame(height: 45)  
+                    }, onDragHandler: { editingStarted in
+                        self.onDragHandler(editingStarted)
+                    }).frame(height: 45)
                 }
             }
         }
@@ -52,6 +57,6 @@ struct SeekBarView: View {
 
 struct SeekBarView_Previews: PreviewProvider {
     static var previews: some View {
-        SeekBarView(currentDuration: 100, currentTime: .constant(30))
+        SeekBarView(currentDuration: .constant(100), currentTime: .constant(30), onDragHandler: { _ in })
     }
 }

@@ -31,9 +31,13 @@ struct PlaylistsView: View {
             SongGenresView(songs: songs, height: 120)
             
             ForEach(songs) { song in
-                NavigationLink(destination: self.createNowPlayingView(with: song)) {
+                ZStack(alignment: .leading) {
                     PlaylistRow(songName: song.name ?? "", 
                                 singerName: song.singer?.name ?? "")
+                    
+                    NavigationLink(destination: self.createNowPlayingView(with: song)) {
+                        EmptyView()
+                    }.buttonStyle(PlainButtonStyle())
                 }
             }
         }

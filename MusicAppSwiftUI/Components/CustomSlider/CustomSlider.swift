@@ -13,14 +13,19 @@ struct CustomSlider<Component: View>: View {
     var range: (Double, Double)
     var knobWidth: CGFloat?
     let viewBuilder: (CustomSliderComponents) -> Component
+    let onDragHandler: (_ editingStarted: Bool) -> () 
     
-    init(value: Binding<Double>, range: (Double, Double), knobWidth: CGFloat? = nil,
-         _ viewBuilder: @escaping (CustomSliderComponents) -> Component
-    ) {
-        _value = value
+    init(value: Binding<Double>, 
+         range: (Double, Double), 
+         knobWidth: CGFloat? = nil,
+         viewBuilder: @escaping (CustomSliderComponents) -> Component,
+         onDragHandler: @escaping (Bool) -> ()) {
+        
+        self._value = value
         self.range = range
         self.viewBuilder = viewBuilder
         self.knobWidth = knobWidth
+        self.onDragHandler = onDragHandler
     }
     
     var body: some View {
@@ -31,9 +36,13 @@ struct CustomSlider<Component: View>: View {
     
     private func view(geometry: GeometryProxy) -> some View {
         let frame = geometry.frame(in: .global)
-        let drag = DragGesture(minimumDistance: 0).onChanged({ drag in
-            self.onDragChange(drag, frame) }
-        )  
+        let drag = DragGesture(minimumDistance: 0)
+            .onChanged({ drag in
+                self.onDragHandler(true)
+                self.onDragChange(drag, frame) })
+            .onEnded { drag in
+                self.onDragHandler(false)
+        }
         
         let offsetX = self.getOffsetX(frame: frame)
         let knobSize = CGSize(width: knobWidth ?? frame.height, height: frame.height)
@@ -50,7 +59,7 @@ struct CustomSlider<Component: View>: View {
         return ZStack { viewBuilder(modifiers).gesture(drag) }
     }
     
-    private func onDragChange(_ drag: DragGesture.Value,_ frame: CGRect) {
+    private func onDragChange(_ drag: DragGesture.Value,_ frame: CGRect) {        
         let width = (knob: Double(knobWidth ?? frame.size.height), view: Double(frame.size.width))
         let xrange = (min: Double(0), max: Double(width.view - width.knob))
         var value = Double(drag.startLocation.x + drag.translation.width) // knob center x
@@ -71,7 +80,7 @@ struct CustomSlider<Component: View>: View {
 
 struct CustomSlider_Previews: PreviewProvider {
     static var previews: some View {
-        CustomSlider(value: .constant(0), range: (0, 100)) { modifiers in
+        CustomSlider(value: .constant(0), range: (0, 100), viewBuilder: { modifiers in
             ZStack {
                 Color.blue.cornerRadius(3).frame(height: 6).modifier(modifiers.barLeft)
                 Color.blue.opacity(0.2).cornerRadius(3).frame(height: 6).modifier(modifiers.barRight)
@@ -80,6 +89,8 @@ struct CustomSlider_Previews: PreviewProvider {
                     Circle().stroke(Color.black.opacity(0.2), lineWidth: 2)
                 }.modifier(modifiers.knob)
             }
-        }.frame(height: 25)
+        }, onDragHandler: { editingStarted in
+            
+        }).frame(height: 25)
     }
 }

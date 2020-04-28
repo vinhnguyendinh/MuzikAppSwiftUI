@@ -36,7 +36,6 @@
 		C98F03552457B98F00DC9553 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F03542457B98F00DC9553 /* URLImageView.swift */; };
 		C98F03572457BF4700DC9553 /* PlaylistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F03562457BF4700DC9553 /* PlaylistRow.swift */; };
 		C9CB8F972456B5A00046BA39 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8F962456B5A00046BA39 /* ProfileImageView.swift */; };
-		C9CB8F9B2456BB160046BA39 /* alexa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9CB8F9A2456BB160046BA39 /* alexa.jpg */; };
 		C9CB8F9D2456BE850046BA39 /* NowPlayingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8F9C2456BE850046BA39 /* NowPlayingDetailView.swift */; };
 		C9CB8F9F2456BFD40046BA39 /* SeekBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8F9E2456BFD40046BA39 /* SeekBarView.swift */; };
 		C9CB8FA22456C1500046BA39 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8FA12456C1500046BA39 /* CustomSlider.swift */; };
@@ -101,7 +100,6 @@
 		C98F03542457B98F00DC9553 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		C98F03562457BF4700DC9553 /* PlaylistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistRow.swift; sourceTree = "<group>"; };
 		C9CB8F962456B5A00046BA39 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
-		C9CB8F9A2456BB160046BA39 /* alexa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alexa.jpg; sourceTree = "<group>"; };
 		C9CB8F9C2456BE850046BA39 /* NowPlayingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingDetailView.swift; sourceTree = "<group>"; };
 		C9CB8F9E2456BFD40046BA39 /* SeekBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeekBarView.swift; sourceTree = "<group>"; };
 		C9CB8FA12456C1500046BA39 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
@@ -305,7 +303,6 @@
 		C9CB8F952456B5450046BA39 /* NowPlaying */ = {
 			isa = PBXGroup;
 			children = (
-				C9CB8F9A2456BB160046BA39 /* alexa.jpg */,
 				C9CB8FAB2456C9A20046BA39 /* ControlsView.swift */,
 				C9CB8F9C2456BE850046BA39 /* NowPlayingDetailView.swift */,
 				C9CB8FAD2456D32F0046BA39 /* NowPlayingView.swift */,
@@ -429,7 +426,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9CB8F9B2456BB160046BA39 /* alexa.jpg in Resources */,
 				C962619D2449749800460396 /* LaunchScreen.storyboard in Resources */,
 				C962619A2449749800460396 /* Preview Assets.xcassets in Resources */,
 				C96261972449749800460396 /* Assets.xcassets in Resources */,

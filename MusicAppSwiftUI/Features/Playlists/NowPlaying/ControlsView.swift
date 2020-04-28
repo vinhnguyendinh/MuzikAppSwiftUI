@@ -30,6 +30,7 @@ struct ControlsView: View {
     var prevHandler: () -> ()
     var playHandler: () -> ()
     var nextHandler: () -> ()
+    var volumeDragHandler: (_ editingStarted: Bool) -> ()
     
     var body: some View {
         VStack {
@@ -82,7 +83,7 @@ struct ControlsView: View {
                 .frame(width: 18, height: 16)
                 .foregroundColor(.pinkColor)
             
-            CustomSlider(value: $volume,  range: (0, 1)) { modifiers in
+            CustomSlider(value: $volume, range: (0, 1), viewBuilder: { modifiers in
                 ZStack {
                     Color.pinkColor.cornerRadius(height/2).frame(height: height).modifier(modifiers.barLeft)
                     Color.black.opacity(0.2).cornerRadius(height/2).frame(height: height).modifier(modifiers.barRight)
@@ -91,7 +92,9 @@ struct ControlsView: View {
                         Circle().stroke(Color.black.opacity(0.2), lineWidth: 2)
                     }.modifier(modifiers.knob)
                 }
-            }.frame(width: 130, height: 15)
+            }, onDragHandler: { editingStarted in
+                self.volumeDragHandler(editingStarted)
+            }).frame(width: 130, height: 15)
         }
     }
     
@@ -138,6 +141,14 @@ struct ControlsView: View {
 
 struct ControlsView_Previews: PreviewProvider {
     static var previews: some View {
-        ControlsView(playbackMode: .constant(.repeat), isPlaying: .constant(true), volume: .constant(0.5), shuffleHandler: {}, repeatHandler: {}, prevHandler: {}, playHandler: {}, nextHandler: {})
+        ControlsView(playbackMode: .constant(.repeat), 
+                     isPlaying: .constant(true), 
+                     volume: .constant(0.5), 
+                     shuffleHandler: {}, 
+                     repeatHandler: {}, 
+                     prevHandler: {}, 
+                     playHandler: {}, 
+                     nextHandler: {}, 
+                     volumeDragHandler: {_ in})
     }
 }

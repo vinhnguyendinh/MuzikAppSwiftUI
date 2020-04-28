@@ -9,18 +9,23 @@
 import SwiftUI
 import AVFoundation
 
-class RemotePlayerURL: ObservableObject {
+class RemotePlayerURL {
     static let shared = RemotePlayerURL()
     
     let player = AVPlayer()
     
-    @Published var duration: Double = 0
-    
+    private var urlString: String?
+        
     private init() {
         
     }
     
     func play(_ urlString: String) {
+        if self.urlString == urlString {
+            self.player.play()
+            return
+        }
+        
         guard let url = URL(string: urlString) else {
             return
         }
@@ -29,10 +34,8 @@ class RemotePlayerURL: ObservableObject {
         self.player.replaceCurrentItem(with: playerItem)
         self.player.play()
         
-        guard let duration = self.player.currentItem?.asset.duration else {
-            return
-        }
-        self.duration = CMTimeGetSeconds(duration)
+        /// Update current url
+        self.urlString = urlString
     }
     
     func pause() {
@@ -43,7 +46,11 @@ class RemotePlayerURL: ObservableObject {
         self.player.volume = value
     }
     
-    func seek(_ toValue: Float) {
-        self.player.seek(to: CMTime(seconds: Double(toValue), preferredTimescale: 1))
+    func seek(_ toValue: TimeInterval, completion: @escaping () -> ()) {
+        let targetTime = CMTime(seconds: toValue,
+                                preferredTimescale: 600)
+        self.player.seek(to: targetTime) { _ in
+            completion()
+        }
     }
 }

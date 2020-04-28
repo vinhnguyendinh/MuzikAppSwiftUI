@@ -18,9 +18,11 @@ struct PlaylistRow: View {
             Text(self.songName)
                 .font(.callout)
                 .padding(.bottom, 10)
+                .lineLimit(nil)
             
             Text(self.singerName)
                 .font(.caption)
+                .lineLimit(nil)
         }
     }
 }

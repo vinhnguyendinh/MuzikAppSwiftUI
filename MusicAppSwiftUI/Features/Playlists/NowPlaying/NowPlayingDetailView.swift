@@ -20,9 +20,11 @@ struct NowPlayingDetailView: View {
             
             Text(self.songName)
                 .font(.title)
+                .lineLimit(nil)
             
             Text(self.singerName)
                 .font(.callout)
+                .lineLimit(nil)
                 .padding()
         }
     }
