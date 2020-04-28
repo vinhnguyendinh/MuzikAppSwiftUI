@@ -12,7 +12,7 @@ struct HomeView: View {
     var body: some View {
         UITabBarWrapper([
             TabBarElement(tabBarItem: TabBarItem(title: "Browse", image: UIImage(systemName: "music.house") ?? UIImage()), { 
-                Text("Browse")
+                BrowseView(topOfTheWeekSongs: [Song.default, Song.default, Song.default], allTimeHits: [Song.default, Song.default, Song.default])
             }),
             TabBarElement(tabBarItem: TabBarItem(title: "All tracks", image: UIImage(systemName: "music.note.list") ?? UIImage()), { 
                 AllTracksView(songs: [Song.default, Song.default, Song.default])
