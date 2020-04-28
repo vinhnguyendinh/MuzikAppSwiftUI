@@ -8,10 +8,12 @@
 
 import Foundation
 
-class Comment: NSObject {
-    var id: String?
+struct Comment: Identifiable {
+    var id: String = UUID().uuidString
     
     var content: String?
     
     var user: User?
+    
+    static let `default` = Comment(id: UUID().uuidString, content: "Comment demo", user: User.default)
 }

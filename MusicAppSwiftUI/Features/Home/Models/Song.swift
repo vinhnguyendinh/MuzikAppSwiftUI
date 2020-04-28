@@ -10,7 +10,7 @@ import SwiftUI
 
 // MARK: - Song
 class Song: NSObject, Identifiable {
-    var id: String
+    var id: String = UUID().uuidString
     
     var name: String?
     
@@ -32,14 +32,20 @@ class Song: NSObject, Identifiable {
     
     var genre: SongGenre = .unknown
     
-    init(id: String, name: String, singer: Singer?, imageUrl: String?, url: String, genre: SongGenre) {
+    init(id: String, name: String, singer: Singer, artist: Artist, time: Double, comments: [Comment], lyrics: [Double: String], imageUrl: String, url: String, genre: SongGenre) {
         self.id = id
         self.name = name
         self.singer = singer
+        self.artist = artist
+        self.time = time
+        self.comments = comments
+        self.lyrics = lyrics
         self.imageUrl = imageUrl
         self.url = url
         self.genre = genre
     }
+    
+    static let `default` = Song(id: UUID().uuidString, name: "Hallowed be thy name", singer: Singer.default, artist: Artist.default, time: 100, comments: [], lyrics: [:], imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80", url: "https://itunes.apple.com/us/album/something-for-the-pain/900032785?i=900032829", genre: .pop)
 }
 
 // MARK: - Song genre

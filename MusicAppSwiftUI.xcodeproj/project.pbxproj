@@ -29,6 +29,20 @@
 		C96261E02449991B00460396 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96261DF2449991B00460396 /* UIImageExtensions.swift */; };
 		C96261E224499E6500460396 /* SongGenresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96261E124499E6500460396 /* SongGenresView.swift */; };
 		C96261E524499EA800460396 /* SongGenreItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96261E424499EA800460396 /* SongGenreItemView.swift */; };
+		C98F03532457B13300DC9553 /* RemoteImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F03522457B13300DC9553 /* RemoteImageURL.swift */; };
+		C98F03552457B98F00DC9553 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F03542457B98F00DC9553 /* URLImageView.swift */; };
+		C98F03572457BF4700DC9553 /* PlaylistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F03562457BF4700DC9553 /* PlaylistRow.swift */; };
+		C9CB8F972456B5A00046BA39 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8F962456B5A00046BA39 /* ProfileImageView.swift */; };
+		C9CB8F9B2456BB160046BA39 /* alexa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9CB8F9A2456BB160046BA39 /* alexa.jpg */; };
+		C9CB8F9D2456BE850046BA39 /* NowPlayingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8F9C2456BE850046BA39 /* NowPlayingDetailView.swift */; };
+		C9CB8F9F2456BFD40046BA39 /* SeekBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8F9E2456BFD40046BA39 /* SeekBarView.swift */; };
+		C9CB8FA22456C1500046BA39 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8FA12456C1500046BA39 /* CustomSlider.swift */; };
+		C9CB8FA42456C16A0046BA39 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8FA32456C16A0046BA39 /* DoubleExtensions.swift */; };
+		C9CB8FA62456C19B0046BA39 /* CustomSliderComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8FA52456C19B0046BA39 /* CustomSliderComponents.swift */; };
+		C9CB8FA82456C31C0046BA39 /* MagnitudeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8FA72456C31C0046BA39 /* MagnitudeChart.swift */; };
+		C9CB8FAA2456C7DD0046BA39 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8FA92456C7DD0046BA39 /* StringExtensions.swift */; };
+		C9CB8FAC2456C9A20046BA39 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8FAB2456C9A20046BA39 /* ControlsView.swift */; };
+		C9CB8FAE2456D32F0046BA39 /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB8FAD2456D32F0046BA39 /* NowPlayingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +91,20 @@
 		C96261DF2449991B00460396 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		C96261E124499E6500460396 /* SongGenresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongGenresView.swift; sourceTree = "<group>"; };
 		C96261E424499EA800460396 /* SongGenreItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongGenreItemView.swift; sourceTree = "<group>"; };
+		C98F03522457B13300DC9553 /* RemoteImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageURL.swift; sourceTree = "<group>"; };
+		C98F03542457B98F00DC9553 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
+		C98F03562457BF4700DC9553 /* PlaylistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistRow.swift; sourceTree = "<group>"; };
+		C9CB8F962456B5A00046BA39 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		C9CB8F9A2456BB160046BA39 /* alexa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alexa.jpg; sourceTree = "<group>"; };
+		C9CB8F9C2456BE850046BA39 /* NowPlayingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingDetailView.swift; sourceTree = "<group>"; };
+		C9CB8F9E2456BFD40046BA39 /* SeekBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeekBarView.swift; sourceTree = "<group>"; };
+		C9CB8FA12456C1500046BA39 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		C9CB8FA32456C16A0046BA39 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		C9CB8FA52456C19B0046BA39 /* CustomSliderComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderComponents.swift; sourceTree = "<group>"; };
+		C9CB8FA72456C31C0046BA39 /* MagnitudeChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnitudeChart.swift; sourceTree = "<group>"; };
+		C9CB8FA92456C7DD0046BA39 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C9CB8FAB2456C9A20046BA39 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		C9CB8FAD2456D32F0046BA39 /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,8 +237,10 @@
 		C96261CE2449847B00460396 /* Playlists */ = {
 			isa = PBXGroup;
 			children = (
+				C9CB8F952456B5450046BA39 /* NowPlaying */,
 				C96261E324499E9200460396 /* SongGenres */,
 				C96261CF2449849100460396 /* PlaylistsView.swift */,
+				C98F03562457BF4700DC9553 /* PlaylistRow.swift */,
 			);
 			path = Playlists;
 			sourceTree = "<group>";
@@ -218,7 +248,9 @@
 		C96261D724498E6B00460396 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				C9CB8FA02456C13A0046BA39 /* CustomSlider */,
 				C96261D824498E8000460396 /* Extensions */,
+				C98F03512457B11500DC9553 /* RemoteImageURL */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -229,6 +261,8 @@
 				C96261D924498E9500460396 /* UIColorExtensions.swift */,
 				C96261DB24498F3100460396 /* ColorExtensions.swift */,
 				C96261DF2449991B00460396 /* UIImageExtensions.swift */,
+				C9CB8FA32456C16A0046BA39 /* DoubleExtensions.swift */,
+				C9CB8FA92456C7DD0046BA39 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -240,6 +274,38 @@
 				C96261E424499EA800460396 /* SongGenreItemView.swift */,
 			);
 			path = SongGenres;
+			sourceTree = "<group>";
+		};
+		C98F03512457B11500DC9553 /* RemoteImageURL */ = {
+			isa = PBXGroup;
+			children = (
+				C98F03522457B13300DC9553 /* RemoteImageURL.swift */,
+				C98F03542457B98F00DC9553 /* URLImageView.swift */,
+			);
+			path = RemoteImageURL;
+			sourceTree = "<group>";
+		};
+		C9CB8F952456B5450046BA39 /* NowPlaying */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB8F9A2456BB160046BA39 /* alexa.jpg */,
+				C9CB8FAB2456C9A20046BA39 /* ControlsView.swift */,
+				C9CB8F9C2456BE850046BA39 /* NowPlayingDetailView.swift */,
+				C9CB8FAD2456D32F0046BA39 /* NowPlayingView.swift */,
+				C9CB8F962456B5A00046BA39 /* ProfileImageView.swift */,
+				C9CB8F9E2456BFD40046BA39 /* SeekBarView.swift */,
+			);
+			path = NowPlaying;
+			sourceTree = "<group>";
+		};
+		C9CB8FA02456C13A0046BA39 /* CustomSlider */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB8FA12456C1500046BA39 /* CustomSlider.swift */,
+				C9CB8FA52456C19B0046BA39 /* CustomSliderComponents.swift */,
+				C9CB8FA72456C31C0046BA39 /* MagnitudeChart.swift */,
+			);
+			path = CustomSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9CB8F9B2456BB160046BA39 /* alexa.jpg in Resources */,
 				C962619D2449749800460396 /* LaunchScreen.storyboard in Resources */,
 				C962619A2449749800460396 /* Preview Assets.xcassets in Resources */,
 				C96261972449749800460396 /* Assets.xcassets in Resources */,
@@ -374,21 +441,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				C96261D02449849100460396 /* PlaylistsView.swift in Sources */,
+				C9CB8FA22456C1500046BA39 /* CustomSlider.swift in Sources */,
+				C98F03572457BF4700DC9553 /* PlaylistRow.swift in Sources */,
 				C96261CD244981C400460396 /* UITabBarControllerWrapper.swift in Sources */,
 				C96261DA24498E9500460396 /* UIColorExtensions.swift in Sources */,
+				C9CB8FAC2456C9A20046BA39 /* ControlsView.swift in Sources */,
+				C98F03532457B13300DC9553 /* RemoteImageURL.swift in Sources */,
 				C96261D624498C5100460396 /* HomeView.swift in Sources */,
+				C9CB8F9F2456BFD40046BA39 /* SeekBarView.swift in Sources */,
 				C96261932449749600460396 /* MusicAppSwiftUI.xcdatamodeld in Sources */,
+				C9CB8FA82456C31C0046BA39 /* MagnitudeChart.swift in Sources */,
+				C9CB8FAE2456D32F0046BA39 /* NowPlayingView.swift in Sources */,
 				C96261E224499E6500460396 /* SongGenresView.swift in Sources */,
+				C9CB8FA62456C19B0046BA39 /* CustomSliderComponents.swift in Sources */,
+				C9CB8F972456B5A00046BA39 /* ProfileImageView.swift in Sources */,
 				C96261E524499EA800460396 /* SongGenreItemView.swift in Sources */,
+				C9CB8FA42456C16A0046BA39 /* DoubleExtensions.swift in Sources */,
 				C96261D424498A5800460396 /* UITabBarWrapper.swift in Sources */,
 				C962618E2449749600460396 /* AppDelegate.swift in Sources */,
 				C96261D2244986A200460396 /* TabBarItem.swift in Sources */,
 				C96261CA24497E1A00460396 /* Comment.swift in Sources */,
 				C96261902449749600460396 /* SceneDelegate.swift in Sources */,
+				C98F03552457B98F00DC9553 /* URLImageView.swift in Sources */,
 				C96261C624497ABA00460396 /* Peoples.swift in Sources */,
 				C96261C824497B2400460396 /* Album.swift in Sources */,
 				C96261E02449991B00460396 /* UIImageExtensions.swift in Sources */,
 				C96261C424497A6800460396 /* Song.swift in Sources */,
+				C9CB8FAA2456C7DD0046BA39 /* StringExtensions.swift in Sources */,
+				C9CB8F9D2456BE850046BA39 /* NowPlayingDetailView.swift in Sources */,
 				C96261DC24498F3100460396 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

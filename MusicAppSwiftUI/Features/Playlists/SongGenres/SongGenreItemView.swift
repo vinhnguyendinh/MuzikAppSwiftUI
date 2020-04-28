@@ -11,25 +11,30 @@ import SwiftUI
 struct SongGenreItemView: View {
     var songGenre: SongGenre
     
-    @Binding var isSelected: Bool
+    var index: Int
+    
+    var isSelected: Bool
+    
+    var tapGesture: () -> ()
+    
+    var width: CGFloat = 100
     
     var body: some View {
         Text(songGenre.description)
             .font(.title)
             .foregroundColor(self.isSelected ? .white : Color.pinkColor)
-            .frame(width: 100, height: 100)
+            .frame(width: self.width, height: self.width)
             .background(self.isSelected ? Color.pinkColor : Color.pinkOverlayColor)
             .clipShape(Circle())
-            .shadow(radius: 10)
+            .shadow(radius: 5)
             .onTapGesture {
-                self.isSelected = !self.isSelected
-                print(self.isSelected)
+                self.tapGesture()
         }
     }
 }
 
 struct SongGenreItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SongGenreItemView(songGenre: .fav, isSelected: .constant(true))
+        SongGenreItemView(songGenre: .fav, index: 0, isSelected: true, tapGesture: {})
     }
 }

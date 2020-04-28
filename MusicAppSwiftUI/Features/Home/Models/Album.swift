@@ -8,12 +8,14 @@
 
 import Foundation
 
-class Album: NSObject {
-    var id: String?
+struct Album: Identifiable {
+    var id: String = UUID().uuidString
     
     var name: String?
     
     var year: String?
     
     var songs: [Song]?
+    
+    static let `default` = Album(id: UUID().uuidString, name: "Sexbombs", year: "2020", songs: [Song.default])
 }

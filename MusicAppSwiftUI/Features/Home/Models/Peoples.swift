@@ -8,31 +8,59 @@
 
 import UIKit
 
-class People: NSObject, Identifiable {
+protocol People: Identifiable {
+    var id: String { get set } 
+    
+    var name: String? { get set }
+    
+    // yyyyMMdd
+    var dateOfBirth: String? { get set }
+    
+    var imageUrl: String? { get set }
+}
+
+extension People {
+    var id: String {
+        return UUID().uuidString
+    }
+}
+
+struct Artist: People {
     var id: String
     
     var name: String?
     
-    var dateOfBirth: String? // yyyyMMdd
+    var dateOfBirth: String?
     
     var imageUrl: String?
-    
-    init(id: String, name: String) {
-        self.id = id
-        self.name = name
-    }
+        
+    static let `default` = Artist(id: UUID().uuidString, name: "Vinh Nguyen", dateOfBirth: "19961202", imageUrl: "https://images.unsplash.com/photo-1542583701-20d3be307eba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80")
 }
 
-class Artist: People {
+struct Singer: People {
+    var id: String
     
+    var name: String?
+    
+    var dateOfBirth: String?
+    
+    var imageUrl: String?
+        
+    static let `default` = Singer(id: UUID().uuidString, name: "Vinh Nguyen", dateOfBirth: "19961202", imageUrl: "https://images.unsplash.com/photo-1542583701-20d3be307eba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80")
 }
 
-class Singer: People {
+struct User: People {
+    var id: String
     
-}
-
-class User: People {
+    var name: String?
+    
+    var dateOfBirth: String?
+    
+    var imageUrl: String?
+        
     var userName: String?
     
     var password: String?
+    
+    static let `default` = User(id: UUID().uuidString, name: "Vinh Nguyen", dateOfBirth: "19961202", imageUrl: "https://images.unsplash.com/photo-1542583701-20d3be307eba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80", userName: "vinhnguyendinhbg", password: "1111")
 }
