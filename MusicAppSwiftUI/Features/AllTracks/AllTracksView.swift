@@ -1,14 +1,14 @@
 //
-//  PlaylistsView.swift
+//  AllTracksView.swift
 //  MusicAppSwiftUI
 //
-//  Created by Vinh Nguyen Dinh on 2020/04/17.
+//  Created by Vinh Nguyen on 2020/04/28.
 //  Copyright © 2020 Vinh Nguyen Dinh. All rights reserved.
 //
 
 import SwiftUI
 
-struct PlaylistsView: View {
+struct AllTracksView: View {
     var songs: [Song]
     
     init(songs: [Song]) {
@@ -20,20 +20,18 @@ struct PlaylistsView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                self.createSongListView()
-            }.navigationBarTitle("Playlist")
+            self.createSongListView()
+                .navigationBarTitle("All Tracks")
         }
     }
     
     private func createSongListView() -> some View {
         return List {
-            SongGenresView(songs: songs, height: 120)
-            
             ForEach(songs) { song in
                 ZStack(alignment: .leading) {
-                    PlaylistRow(songName: song.name ?? "", 
-                                singerName: song.singer?.name ?? "")
+                    SongRow(songName: song.name ?? "",
+                            singerName: song.singer?.name ?? "",
+                            time: song.time ?? 0)
                     
                     NavigationLink(destination: self.createNowPlayingView(with: song)) {
                         EmptyView()
@@ -45,16 +43,16 @@ struct PlaylistsView: View {
     
     private func createNowPlayingView(with song: Song) -> some View {
         return NowPlayingView(currentDuration: 100,
-                              songImageUrl: song.imageUrl ?? "", 
-                              songName: song.name ?? "", 
-                              singerName: song.singer?.name ?? "", 
+                              songImageUrl: song.imageUrl ?? "",
+                              songName: song.name ?? "",
+                              singerName: song.singer?.name ?? "",
                               songUrl: song.url ?? "",
-                              backButtonTitle: "Playlist")
+                              backButtonTitle: "All Tracks")
     }
 }
 
-struct PlaylistsView_Previews: PreviewProvider {
+struct AllTracksView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaylistsView(songs: [Song.default, Song.default])
+        AllTracksView(songs: [Song.default])
     }
 }

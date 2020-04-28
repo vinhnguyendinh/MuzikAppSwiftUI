@@ -15,7 +15,7 @@ struct HomeView: View {
                 Text("Browse")
             }),
             TabBarElement(tabBarItem: TabBarItem(title: "All tracks", image: UIImage(systemName: "music.note.list") ?? UIImage()), { 
-                Text("All tracks")
+                AllTracksView(songs: [Song.default, Song.default, Song.default])
             }),
             TabBarElement(tabBarItem: TabBarItem(title: "Playlists", image: UIImage(systemName: "list.bullet") ?? UIImage()), { 
                 PlaylistsView(songs: [Song.default])

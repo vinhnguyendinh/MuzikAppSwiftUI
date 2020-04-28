@@ -24,6 +24,7 @@ struct NowPlayingView: View {
     var songName: String
     var singerName: String
     var songUrl: String
+    var backButtonTitle: String
     
     private let timeObserver = PlayerTimeObserver(player: RemotePlayerURL.shared.player)
     private let durationObserver = PlayerDurationObserver(player: RemotePlayerURL.shared.player)
@@ -92,7 +93,7 @@ struct NowPlayingView: View {
                 Image(systemName: "arrow.left")
                     .aspectRatio(contentMode: .fit)
                     .foregroundColor(.black)
-                Text("Playlist")
+                Text(self.backButtonTitle)
                     .foregroundColor(.black)
             }
         }
@@ -135,6 +136,7 @@ struct NowPlayingView_Previews: PreviewProvider {
                        songImageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80", 
                        songName: "Inis Mona - Eluveiti", 
                        singerName: "Eluveitie", 
-                       songUrl: "https://s3.amazonaws.com/kargopolov/kukushka.mp3")
+                       songUrl: "https://s3.amazonaws.com/kargopolov/kukushka.mp3",
+                       backButtonTitle: "Playlist")
     }
 }

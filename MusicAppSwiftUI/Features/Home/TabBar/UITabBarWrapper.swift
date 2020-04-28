@@ -23,11 +23,9 @@ struct UITabBarWrapper: View {
             // Set tint color for tab bar item]
             let colorNormal = UIColor.black.withAlphaComponent(0.25)
             let selectedColor = UIColor.white
-                   
-            tabBarItem.image = $1.tabBarItem.image.withRenderingMode(.alwaysOriginal)
-            tabBarItem.selectedImage = $1.tabBarItem.image.withRenderingMode(.alwaysOriginal)
-            UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: colorNormal], for: .normal)
-            UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: selectedColor], for: .selected)
+
+            UITabBar.appearance().unselectedItemTintColor = colorNormal
+            UITabBar.appearance().tintColor = selectedColor
 
             // Set tab bar item to hosting view controller
             hostingVC.tabBarItem = tabBarItem

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3CCB4B32458652700873C02 /* AllTracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCB4B22458652700873C02 /* AllTracksView.swift */; };
+		A3CCB4B52458656200873C02 /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCB4B42458656200873C02 /* SongRow.swift */; };
 		C90885C52458032300F38312 /* RemotePlayerURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90885C42458032300F38312 /* RemotePlayerURL.swift */; };
 		C90885C724580F2300F38312 /* PlayerTimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90885C624580F2300F38312 /* PlayerTimeObserver.swift */; };
 		C90885C92458117F00F38312 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90885C82458117F00F38312 /* Utility.swift */; };
@@ -65,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3CCB4B22458652700873C02 /* AllTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTracksView.swift; sourceTree = "<group>"; };
+		A3CCB4B42458656200873C02 /* SongRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRow.swift; sourceTree = "<group>"; };
 		C90885C42458032300F38312 /* RemotePlayerURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlayerURL.swift; sourceTree = "<group>"; };
 		C90885C624580F2300F38312 /* PlayerTimeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTimeObserver.swift; sourceTree = "<group>"; };
 		C90885C82458117F00F38312 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -136,6 +140,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3CCB4B0245863C700873C02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C962618D2449749600460396 /* AppDelegate.swift */,
+				C96261962449749800460396 /* Assets.xcassets */,
+				C962619B2449749800460396 /* LaunchScreen.storyboard */,
+				C96261912449749600460396 /* MusicAppSwiftUI.xcdatamodeld */,
+				C962618F2449749600460396 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3CCB4B12458651000873C02 /* AllTracks */ = {
+			isa = PBXGroup;
+			children = (
+				A3CCB4B22458652700873C02 /* AllTracksView.swift */,
+				A3CCB4B42458656200873C02 /* SongRow.swift */,
+			);
+			path = AllTracks;
+			sourceTree = "<group>";
+		};
 		C90885C3245802EE00F38312 /* RemotePlayerURL */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,13 +195,9 @@
 			children = (
 				C96261D724498E6B00460396 /* Components */,
 				C96261C024497A2700460396 /* Features */,
-				C962618D2449749600460396 /* AppDelegate.swift */,
-				C962618F2449749600460396 /* SceneDelegate.swift */,
-				C96261962449749800460396 /* Assets.xcassets */,
-				C962619B2449749800460396 /* LaunchScreen.storyboard */,
 				C962619E2449749800460396 /* Info.plist */,
-				C96261912449749600460396 /* MusicAppSwiftUI.xcdatamodeld */,
 				C96261982449749800460396 /* Preview Content */,
+				A3CCB4B0245863C700873C02 /* Supporting Files */,
 			);
 			path = MusicAppSwiftUI;
 			sourceTree = "<group>";
@@ -210,6 +231,7 @@
 		C96261C024497A2700460396 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				A3CCB4B12458651000873C02 /* AllTracks */,
 				C96261CE2449847B00460396 /* Playlists */,
 				C96261C124497A3900460396 /* Home */,
 			);
@@ -459,6 +481,7 @@
 				C96261CD244981C400460396 /* UITabBarControllerWrapper.swift in Sources */,
 				C96261DA24498E9500460396 /* UIColorExtensions.swift in Sources */,
 				C9CB8FAC2456C9A20046BA39 /* ControlsView.swift in Sources */,
+				A3CCB4B32458652700873C02 /* AllTracksView.swift in Sources */,
 				C98F03532457B13300DC9553 /* RemoteImageURL.swift in Sources */,
 				C96261D624498C5100460396 /* HomeView.swift in Sources */,
 				C9CB8F9F2456BFD40046BA39 /* SeekBarView.swift in Sources */,
@@ -474,6 +497,7 @@
 				C9CB8FA42456C16A0046BA39 /* DoubleExtensions.swift in Sources */,
 				C96261D424498A5800460396 /* UITabBarWrapper.swift in Sources */,
 				C962618E2449749600460396 /* AppDelegate.swift in Sources */,
+				A3CCB4B52458656200873C02 /* SongRow.swift in Sources */,
 				C96261D2244986A200460396 /* TabBarItem.swift in Sources */,
 				C96261CA24497E1A00460396 /* Comment.swift in Sources */,
 				C96261902449749600460396 /* SceneDelegate.swift in Sources */,
