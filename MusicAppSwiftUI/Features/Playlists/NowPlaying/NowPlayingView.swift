@@ -18,6 +18,8 @@ struct NowPlayingView: View {
     @State var currentTime: TimeInterval = 0
     @State var currentDuration: TimeInterval = 1
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var songImageUrl: String
     var songName: String
     var singerName: String
@@ -33,20 +35,22 @@ struct NowPlayingView: View {
             self.createBackgroundBlurImage()
             self.createPlayingView()
         }
-        /// Listen out for the time observer publishing changes to the player's time
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: self.createBackButton())
+            /// Listen out for the time observer publishing changes to the player's time
             .onReceive(self.timeObserver.publisher) { time in
-            /// Update the local var
-            self.currentTime = time
+                /// Update the local var
+                self.currentTime = time
         }
-        /// Listen out for the duration observer publishing changes to the player's item duration
+            /// Listen out for the duration observer publishing changes to the player's item duration
             .onReceive(self.durationObserver.publisher) { duration in
-            /// Update the local var
-            self.currentDuration = duration
+                /// Update the local var
+                self.currentDuration = duration
         }
-        /// Listen out for the item observer publishing a change to whether the player has an item
+            /// Listen out for the item observer publishing a change to whether the player has an item
             .onReceive(self.itemObserver.publisher) { hasItem in
-            self.currentTime = 0
-            self.currentDuration = 1
+                self.currentTime = 0
+                self.currentDuration = 1
         }
     }
     
@@ -78,6 +82,20 @@ struct NowPlayingView: View {
         URLImageView(url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80")
             .frame(width: 300, height: 300)
             .blur(radius: 40)
+    }
+    
+    private func createBackButton() -> some View {
+        return Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+        }) {
+            HStack {
+                Image(systemName: "arrow.left")
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.black)
+                Text("Playlist")
+                    .foregroundColor(.black)
+            }
+        }
     }
     
     // MARK: - UI Actions
