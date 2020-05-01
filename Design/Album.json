@@ -1,0 +1,139 @@
+{
+    "albums": [
+        {
+            "id": "0edf4310-8a84-11ea-bc55-0242ac130003",
+            "name": "Sexbombs",
+            "year": "2020",
+            "songs": [
+                {
+                    "id": "0edf3cbc-8a84-11ea-bc55-0242ac130003",
+                    "name": "40",
+                    "singer": {
+                        "id": "0edf3f28-8a84-11ea-bc55-0242ac130003",
+                        "name": "Maroon 5",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1489602642804-64dea1e3ebc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                    },
+                    "artist": {
+                        "id": "0edf419e-8a84-11ea-bc55-0242ac130003",
+                        "name": "Alex Costa",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1474692295473-66ba4d54e0d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80"
+                    },
+                    "time": 458,
+                    "imageUrl": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                    "url": "https://s3.amazonaws.com/kargopolov/kukushka.mp3",
+                    "genre": 1
+                },
+                {
+                    "id": "0edf3cbc-8a84-11ea-bc55-0242ac130004",
+                    "name": "Dancin'",
+                    "singer": {
+                        "id": "0edf3f28-8a84-11ea-bc55-0242ac130004",
+                        "name": "Martin Garrix",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1520454125516-134a66d9bf78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    },
+                    "artist": {
+                        "id": "0edf419e-8a84-11ea-bc55-0242ac130004",
+                        "name": "Unknown",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1474692295473-66ba4d54e0d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80"
+                    },
+                    "time": 458,
+                    "imageUrl": "https://images.unsplash.com/photo-1556405903-073dbfbd8132?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "url": "https://s3.amazonaws.com/kargopolov/kukushka.mp3",
+                    "genre": 1
+                },
+                {
+                    "id": "0edf3cbc-8a84-11ea-bc55-0242ac130005",
+                    "name": "Hope",
+                    "singer": {
+                        "id": "0edf3f28-8a84-11ea-bc55-0242ac130005",
+                        "name": "NeONBand",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1495434786667-8d322ec659f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    },
+                    "artist": {
+                        "id": "0edf419e-8a84-11ea-bc55-0242ac130004",
+                        "name": "Unknown",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1474692295473-66ba4d54e0d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80"
+                    },
+                    "time": 458,
+                    "imageUrl": "https://images.unsplash.com/photo-1565462900928-4c1d5785a51e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "url": "https://s3.amazonaws.com/kargopolov/kukushka.mp3",
+                    "genre": 1
+                }
+            ]
+        },
+        {
+            "id": "0edf4310-8a84-11ea-bc55-0242ac130003",
+            "name": "Too hot to handle",
+            "year": "2020",
+            "songs": [
+                {
+                    "id": "0edf3cbc-8a84-11ea-bc55-0242ac130003",
+                    "name": "Memory",
+                    "singer": {
+                        "id": "0edf3f28-8a84-11ea-bc55-0242ac130003",
+                        "name": "Maroon 5",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1576877217503-626233de197a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    },
+                    "artist": {
+                        "id": "0edf419e-8a84-11ea-bc55-0242ac130003",
+                        "name": "Alex Costa",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1474692295473-66ba4d54e0d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80"
+                    },
+                    "time": 458,
+                    "imageUrl": "https://images.unsplash.com/flagged/photo-1551506664-cbf7c9a488ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "url": "https://s3.amazonaws.com/kargopolov/kukushka.mp3",
+                    "genre": 1
+                },
+                {
+                    "id": "0edf3cbc-8a84-11ea-bc55-0242ac130004",
+                    "name": "Payphone",
+                    "singer": {
+                        "id": "0edf3f28-8a84-11ea-bc55-0242ac130004",
+                        "name": "Martin Garrix",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1522196155918-e63b5daeaddd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    },
+                    "artist": {
+                        "id": "0edf419e-8a84-11ea-bc55-0242ac130004",
+                        "name": "Unknown",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1474692295473-66ba4d54e0d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80"
+                    },
+                    "time": 458,
+                    "imageUrl": "https://images.unsplash.com/photo-1487954152950-e0584673b7f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "url": "https://s3.amazonaws.com/kargopolov/kukushka.mp3",
+                    "genre": 1
+                },
+                {
+                    "id": "0edf3cbc-8a84-11ea-bc55-0242ac130005",
+                    "name": "Beautiful in white",
+                    "singer": {
+                        "id": "0edf3f28-8a84-11ea-bc55-0242ac130005",
+                        "name": "NeONBand",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1495434786667-8d322ec659f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    },
+                    "artist": {
+                        "id": "0edf419e-8a84-11ea-bc55-0242ac130004",
+                        "name": "Unknown",
+                        "dateOfBirth": "",
+                        "imageUrl": "https://images.unsplash.com/photo-1474692295473-66ba4d54e0d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80"
+                    },
+                    "time": 458,
+                    "imageUrl": "https://images.unsplash.com/photo-1570835063439-4e8005b73aa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "url": "https://s3.amazonaws.com/kargopolov/kukushka.mp3",
+                    "genre": 1
+                }
+            ]
+        }
+
+    ]
+}

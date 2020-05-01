@@ -9,7 +9,7 @@
 import SwiftUI
 
 // MARK: - Song
-class Song: NSObject, Identifiable {
+class Song: NSObject, Identifiable, Codable {
     var id: String = UUID().uuidString
     
     var name: String?
@@ -45,11 +45,23 @@ class Song: NSObject, Identifiable {
         self.genre = genre
     }
     
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(String.self, forKey: .id)
+        name = try? container.decode(String.self, forKey: .name)
+        singer = try? container.decode(Singer.self, forKey: .singer)
+        artist = try? container.decode(Artist.self, forKey: .artist)
+        time = try? container.decode(Double.self, forKey: .time)
+        imageUrl = try? container.decode(String.self, forKey: .imageUrl)
+        url = try? container.decode(String.self, forKey: .url)
+        genre = try container.decode(SongGenre.self, forKey: .genre)
+    }
+    
     static let `default` = Song(id: UUID().uuidString, name: "Hallowed be thy name", singer: Singer.default, artist: Artist.default, time: 100, comments: [], lyrics: [:], imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80", url: "https://s3.amazonaws.com/kargopolov/kukushka.mp3", genre: .pop)
 }
 
 // MARK: - Song genre
-enum SongGenre: Int {
+enum SongGenre: Int, Codable {
     case unknown = 0
     case fav
     case rock

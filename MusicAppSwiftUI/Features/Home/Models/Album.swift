@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Album: Identifiable {
+struct Album: Identifiable, Codable {
     var id: String = UUID().uuidString
     
     var name: String?

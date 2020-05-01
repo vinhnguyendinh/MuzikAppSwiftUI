@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol People: Identifiable {
+protocol People: Identifiable, Codable {
     var id: String { get set } 
     
     var name: String? { get set }
